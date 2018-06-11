@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Quattrocento+Sans');
 @font-face {
 	font-family: 'Socialico';
-	src: url('/app/fonts/Socialico.ttf');
+	src: url('../fonts/Socialico.ttf');
+}
+body {
+	background: red!important;
 }
