@@ -21,13 +21,18 @@ $second-font: "Quattrocento Sans", sans-serif;
 	margin-right: 1px;
 }
 
-/* RESET */
+/* RESPONSIVE */
 
-body {
+html, body {
+	overflow-x: hidden;
+	width: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+/* RESET */
+body {
 	font-family: $first-font;
-	overflow-x: hidden;
 }
 
 * {
@@ -36,6 +41,8 @@ body {
 a {
 	text-decoration: none;
 }
+
+
 /* HEADER */
 header {
 	background-color: #1d2126;

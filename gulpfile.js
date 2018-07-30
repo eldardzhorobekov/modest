@@ -38,7 +38,9 @@ gulp.task('watch', ['browserSync'], function(){
 });
 
 gulp.task('browserSync', function(){
-	browserSync({
-		proxy: "modest/app"
+	browserSync.init({
+		server: {
+			baseDir: './app/'
+		}
 	})
 });
