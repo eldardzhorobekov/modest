@@ -41,6 +41,10 @@ body {
 a {
 	text-decoration: none;
 }
+button:focus,
+a:focus {
+	outline: 0
+}
 
 
 /* HEADER */
