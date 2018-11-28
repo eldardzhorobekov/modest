@@ -8,9 +8,6 @@ var gulp = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer'),
 	cssnext = require('cssnext'),
 	precss = require('precss');
-
-var imageop = require('gulp-image-optimization');
-const imagemin = require('gulp-imagemin');
 gulp.task('default', ['watch']);
  
 gulp.task('sass', function(){
@@ -46,20 +43,3 @@ gulp.task('browserSync', function(){
 		}
 	})
 });
-
-var gulp = require('gulp');
-
-
-gulp.task('images', function(cb) {
-    gulp.src(['app/**/*.png','app/**/*.jpg','app/**/*.gif','app/**/*.jpeg']).pipe(imageop({
-        optimizationLevel: 5,
-        progressive: true,
-        interlaced: true
-    })).pipe(gulp.dest('app/images_optimized')).on('end', cb).on('error', cb);
-});
-
-gulp.task('imagemin', () =>
-    gulp.src('app/images/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
-);

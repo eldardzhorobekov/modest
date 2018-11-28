@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-image-resize": "^0.13.0",
     "npm": "^6.4.1"
   },
   "devDependencies": {
