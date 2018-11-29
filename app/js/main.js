@@ -13,30 +13,13 @@ $(function() {
 		arrows: false,
 		dots: true,
 	});
-
-	/*var teamSlider = $('.team-slider');
-	$(teamSlider).slick({
-		responsive: [
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					infinite: true,
-				}
-			},
-			{
-				breakpoint: 1920,
-				settings: "unslick"
-			}
-		]
-	})*/
-
+	
 	var galleryShowBtn = $('#js-show-more'),
 		galleryItems = $('.portfolio-gallery-item'),
 		galleryItemsToShow = 6;
 	$(galleryShowBtn).on('click', function(){
 		$(galleryItems).slice(galleryItemsToShow,galleryItemsToShow+=3).css('display', 'block');
+		blazy = new Blazy();
 		if(galleryItemsToShow == galleryItems.length) {
 			$(this).css('display', 'none');
 		}
