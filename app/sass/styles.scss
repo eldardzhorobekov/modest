@@ -107,6 +107,7 @@ header {
 	.slide {
 		width: 100%;
 		height: calc(100vh - 65px);
+		min-height: calc(100vh - 65px);
 		display: flex;
 		align-items: center;
 		position: relative;
